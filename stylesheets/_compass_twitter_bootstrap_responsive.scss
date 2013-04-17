@@ -13,35 +13,24 @@
 // For phone and tablet devices
 // -------------------------------------------------------------
 
-
 // REPEAT VARIABLES & MIXINS
-// -------------------------
 // Required since we compile the responsive stuff separately
 
 @import "compass_twitter_bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
 @import "compass_twitter_bootstrap/mixins";
 
-.clearfix {
-  @include ctb-clearfix();
-}
+.clearfix { @include ctb-clearfix(); }
 
-.hide-text {
-  @include ctb-hide-text();
-}
+.hide-text { @include ctb-hide-text(); }
 
-.input-block-level {
-  @include ctb-input-block-level();
-}
+.input-block-level { @include ctb-input-block-level(); }
 
 
 // RESPONSIVE CLASSES
-// ------------------
-
 @import "compass_twitter_bootstrap/responsive-utilities";
 
 
 // MEDIA QUERIES
-// ------------------
 
 // Large desktops
 @import "compass_twitter_bootstrap/responsive-1200px-min";
@@ -54,7 +43,6 @@
 
 
 // RESPONSIVE NAVBAR
-// ------------------
 
 // From 979px and below, show a button to toggle navbar contents
 @import "compass_twitter_bootstrap/responsive-navbar";

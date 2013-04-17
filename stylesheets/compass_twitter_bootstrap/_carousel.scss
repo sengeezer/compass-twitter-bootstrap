@@ -1,7 +1,5 @@
 //
 // Carousel
-// --------------------------------------------------
-
 
 .carousel {
   position: relative;
@@ -13,60 +11,32 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-}
-
-.carousel-inner {
-
   > .item {
     display: none;
     position: relative;
     @include ctb-transition(.6s ease-in-out left);
-
     // Account for jankitude on images
-    > img,
-    > a > img {
+    > img, > a > img {
       display: block;
       line-height: 1;
     }
   }
-
-  > .active,
-  > .next,
-  > .prev { display: block; }
-
-  > .active {
-    left: 0;
-  }
-
-  > .next,
-  > .prev {
+  > .active, > .next, > .prev { display: block; }
+  > .active { left: 0; }
+  > .next, > .prev {
     position: absolute;
     top: 0;
     width: 100%;
   }
-
-  > .next {
-    left: 100%;
-  }
-  > .prev {
-    left: -100%;
-  }
+  > .next { left: 100%; }
+  > .prev { left: -100%; }
   > .next.left,
-  > .prev.right {
-    left: 0;
-  }
-
-  > .active.left {
-    left: -100%;
-  }
-  > .active.right {
-    left: 100%;
-  }
-
+  > .prev.right { left: 0; }
+  > .active.left { left: -100%; }
+  > .active.right { left: 100%; }
 }
 
 // Left/right controls for nav
-// ---------------------------
 
 .carousel-control {
   position: absolute;
@@ -84,23 +54,18 @@
   border: 3px solid $white;
   @include ctb-border-radius(23px);
   @include ctb-opacity(50);
-
   // we can't have this transition here
   // because webkit cancels the carousel
   // animation if you trip this while
   // in the middle of another animation
   // ;_;
   // @include ctb-transition(opacity .2s linear);
-
   // Reposition the right one
   &.right {
     left: auto;
     right: 15px;
   }
-
-  // Hover/focus state
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     color: $white;
     text-decoration: none;
     @include ctb-opacity(90);
@@ -108,7 +73,6 @@
 }
 
 // Carousel indicator pips
-// -----------------------------
 .carousel-indicators {
   position: absolute;
   top: 15px;
@@ -116,7 +80,6 @@
   z-index: 5;
   margin: 0;
   list-style: none;
-
   li {
     display: block;
     float: left;
@@ -126,15 +89,12 @@
     text-indent: -999px;
     background-color: #ccc;
     background-color: rgba(255,255,255,.25);
-    border-radius: 5px;
+    @include border-radius(5px);
   }
-  .active {
-    background-color: #fff;
-  }
+  .active { background-color: #fff; }
 }
 
 // Caption for text below images
-// -----------------------------
 
 .carousel-caption {
   position: absolute;
@@ -144,15 +104,10 @@
   padding: 15px;
   background: $grayDark;
   background: rgba(0,0,0,.75);
-}
-.carousel-caption h4,
-.carousel-caption p {
-  color: $white;
-  line-height: $baseLineHeight;
-}
-.carousel-caption h4 {
-  margin: 0 0 5px;
-}
-.carousel-caption p {
-  margin-bottom: 0;
+  h4, p {
+    color: $white;
+    line-height: $baseLineHeight;
+  }
+  h4 { margin: 0 0 5px; }
+  p { margin-bottom: 0; }
 }

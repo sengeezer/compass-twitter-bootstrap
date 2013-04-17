@@ -14,17 +14,11 @@
 @import "compass_twitter_bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
 @import "compass_twitter_bootstrap/mixins";
 
-.clearfix {
-  @include ctb-clearfix();
-}
+.clearfix { @include ctb-clearfix(); }
 
-.hide-text {
-  @include ctb-hide-text();
-}
+.hide-text { @include ctb-hide-text(); }
 
-.input-block-level {
-  @include ctb-input-block-level();
-}
+.input-block-level { @include ctb-input-block-level(); }
 
 // CSS Reset
 @import "compass_twitter_bootstrap/reset";
