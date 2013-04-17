@@ -2,7 +2,9 @@
 
 Compass Twitter Bootstrap is Twitter's toolkit converted for Compass.
 
-Demo App at https://github.com/vwall/Compass-Twitter-Bootstrap-Demo-App
+## Fork notes
+
+The purpose of this fork is to provide better SCSS and only that (no inferior SASS).
 
 ## Usage
 
