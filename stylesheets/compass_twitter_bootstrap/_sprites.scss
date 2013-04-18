@@ -1,10 +1,7 @@
 //
 // Sprites
-// --------------------------------------------------
-
 
 // ICONS
-// -----
 
 // All icons receive the styles of the <i> tag with a base class
 // of .i and are then given a unique class to add width, height,
@@ -14,8 +11,7 @@
 // For the white version of the icons, just add the .icon-white class:
 // <i class="icon-inbox icon-white"></i>
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -45,9 +41,7 @@
 .dropdown-submenu:hover > a > [class^="icon-"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
-.dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: image-url("#{$iconWhiteSpritePath}");
-}
+.dropdown-submenu:focus > a > [class*=" icon-"] { background-image: image-url("#{$iconWhiteSpritePath}"); }
 
 .icon-glass              { background-position: 0      0; }
 .icon-music              { background-position: -24px  0; }

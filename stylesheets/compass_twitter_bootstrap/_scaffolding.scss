@@ -1,10 +1,7 @@
 //
 // Scaffolding
-// --------------------------------------------------
-
 
 // Body reset
-// -------------------------
 
 body {
   margin: 0;
@@ -15,28 +12,21 @@ body {
   background-color: $bodyBackground;
 }
 
-
 // Links
-// -------------------------
 
 a {
   color: $linkColor;
   text-decoration: none;
+  &:hover, &:focus {
+    color: $linkColorHover;
+    text-decoration: underline;
+  }
 }
-a:hover,
-a:focus {
-  color: $linkColorHover;
-  text-decoration: underline;
-}
-
 
 // Images
-// -------------------------
 
 // Rounded corners
-.img-rounded {
-  @include ctb-border-radius(6px);
-}
+.img-rounded { @include ctb-border-radius(6px); }
 
 // Add polaroid-esque trim
 .img-polaroid {
@@ -47,7 +37,7 @@ a:focus {
   @include ctb-box-shadow(0 1px 3px rgba(0,0,0,.1));
 }
 
-// Perfect circle
-.img-circle {
+// Mer de noms
+.img-circle { 
   @include ctb-border-radius(500px); // crank the border-radius so it works with most reasonably sized images
 }

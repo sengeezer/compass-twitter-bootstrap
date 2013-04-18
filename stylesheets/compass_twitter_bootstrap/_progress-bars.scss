@@ -78,25 +78,13 @@
 .progress-danger.progress-striped .bar, .progress-striped .bar-danger { @include ctb-gradient-striped(#ee5f5b); }
 
 // Success (green)
-.progress-success .bar, .progress .bar-success {
-  @include ctb-gradient-vertical(#62c462, #57a957);
-}
-.progress-success.progress-striped .bar, .progress-striped .bar-success {
-  @include ctb-gradient-striped(#62c462);
-}
+.progress-success .bar, .progress .bar-success { @include ctb-gradient-vertical(#62c462, #57a957); }
+.progress-success.progress-striped .bar, .progress-striped .bar-success { @include ctb-gradient-striped(#62c462); }
 
 // Info (teal)
-.progress-info .bar, .progress .bar-info {
-  @include ctb-gradient-vertical(#5bc0de, #339bb9);
-}
-.progress-info.progress-striped .bar, .progress-striped .bar-info {
-  @include ctb-gradient-striped(#5bc0de);
-}
+.progress-info .bar, .progress .bar-info { @include ctb-gradient-vertical(#5bc0de, #339bb9); }
+.progress-info.progress-striped .bar, .progress-striped .bar-info { @include ctb-gradient-striped(#5bc0de); }
 
 // Warning (orange)
-.progress-warning .bar, .progress .bar-warning {
-  @include ctb-gradient-vertical(lighten($orange, 15%), $orange);
-}
-.progress-warning.progress-striped .bar, .progress-striped .bar-warning {
-  @include ctb-gradient-striped(lighten($orange, 15%));
-}
+.progress-warning .bar, .progress .bar-warning { @include ctb-gradient-vertical(lighten($orange, 15%), $orange); }
+.progress-warning.progress-striped .bar, .progress-striped .bar-warning { @include ctb-gradient-striped(lighten($orange, 15%)); }

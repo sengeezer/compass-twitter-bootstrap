@@ -1,7 +1,5 @@
 //
 // Tooltips
-// --------------------------------------------------
-
 
 // Base class
 .tooltip {
@@ -12,11 +10,11 @@
   font-size: 11px;
   line-height: 1.4;
   @include ctb-opacity(0);
-  &.in     { @include ctb-opacity(80); }
-  &.top    { margin-top:  -3px; padding: 5px 0; }
-  &.right  { margin-left:  3px; padding: 0 5px; }
+  &.in { @include ctb-opacity(80); }
+  &.top { margin-top:  -3px; padding: 5px 0; }
+  &.right { margin-left:  3px; padding: 0 5px; }
   &.bottom { margin-top:   3px; padding: 5px 0; }
-  &.left   { margin-left: -3px; padding: 0 5px; }
+  &.left { margin-left: -3px; padding: 0 5px; }
 }
 
 // Wrapper for the tooltip content

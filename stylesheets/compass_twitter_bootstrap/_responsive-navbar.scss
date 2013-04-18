@@ -1,33 +1,18 @@
 //
 // Responsive: Navbar
-// --------------------------------------------------
-
 
 // TABLETS AND BELOW
-// -----------------
 @media (max-width: $navbarCollapseWidth) {
-
   // UNFIX THE TOPBAR
-  // ----------------
   // Remove any padding from the body
-  body {
-    padding-top: 0;
-  }
+  body { padding-top: 0; }
   // Unfix the navbars
   .navbar-fixed-top,
-  .navbar-fixed-bottom {
-    position: static;
-  }
-  .navbar-fixed-top {
-    margin-bottom: $baseLineHeight;
-  }
-  .navbar-fixed-bottom {
-    margin-top: $baseLineHeight;
-  }
+  .navbar-fixed-bottom { position: static; }
+  .navbar-fixed-top { margin-bottom: $baseLineHeight; }
+  .navbar-fixed-bottom { margin-top: $baseLineHeight; }
   .navbar-fixed-top .navbar-inner,
-  .navbar-fixed-bottom .navbar-inner {
-    padding: 5px;
-  }
+  .navbar-fixed-bottom .navbar-inner { padding: 5px; }
   .navbar .container {
     width: auto;
     padding: 0;
@@ -38,30 +23,20 @@
     padding-right: 10px;
     margin: 0 0 0 -5px;
   }
-
   // COLLAPSIBLE NAVBAR
-  // ------------------
   // Nav collapse clears brand
-  .nav-collapse {
-    clear: both;
-  }
+  .nav-collapse { clear: both; }
   // Block-level the nav
   .nav-collapse .nav {
     float: none;
     margin: 0 0 ($baseLineHeight / 2);
   }
-  .nav-collapse .nav > li {
-    float: none;
-  }
-  .nav-collapse .nav > li > a {
-    margin-bottom: 2px;
-  }
-  .nav-collapse .nav > .divider-vertical {
-    display: none;
-  }
+  .nav-collapse .nav > li { float: none; }
+  .nav-collapse .nav > li > a { margin-bottom: 2px; }
+  .nav-collapse .nav > .divider-vertical { display: none; }
   .nav-collapse .nav .nav-header {
     color: $navbarText;
-    text-shadow: none;
+    @include text-shadow(none);
   }
   // Nav and dropdown links in navbar
   .nav-collapse .nav > li > a,
@@ -77,25 +52,17 @@
     font-weight: normal;
     @include ctb-border-radius($baseBorderRadius);
   }
-  .nav-collapse .dropdown-menu li + li a {
-    margin-bottom: 2px;
-  }
+  .nav-collapse .dropdown-menu li + li a { margin-bottom: 2px; }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .nav > li > a:focus,
   .nav-collapse .dropdown-menu a:hover,
-  .nav-collapse .dropdown-menu a:focus {
-    background-color: $navbarBackground;
-  }
+  .nav-collapse .dropdown-menu a:focus { background-color: $navbarBackground; }
   .navbar-inverse .nav-collapse .nav > li > a,
-  .navbar-inverse .nav-collapse .dropdown-menu a {
-    color: $navbarInverseLinkColor;
-  }
+  .navbar-inverse .nav-collapse .dropdown-menu a { color: $navbarInverseLinkColor; }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .nav > li > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover,
-  .navbar-inverse .nav-collapse .dropdown-menu a:focus {
-    background-color: $navbarInverseBackground;
-  }
+  .navbar-inverse .nav-collapse .dropdown-menu a:focus { background-color: $navbarInverseBackground; }
   // Buttons in the navbar
   .nav-collapse.in .btn-group {
     margin-top: 5px;
@@ -116,22 +83,12 @@
     @include ctb-border-radius(0);
     @include ctb-box-shadow(none);
   }
-  .nav-collapse .open > .dropdown-menu {
-    display: block;
-  }
-
+  .nav-collapse .open > .dropdown-menu { display: block; }
   .nav-collapse .dropdown-menu:before,
-  .nav-collapse .dropdown-menu:after {
-    display: none;
-  }
-  .nav-collapse .dropdown-menu .divider {
-    display: none;
-  }
+  .nav-collapse .dropdown-menu:after { display: none; }
+  .nav-collapse .dropdown-menu .divider { display: none; }
   .nav-collapse .nav > li > .dropdown-menu {
-    &:before,
-    &:after {
-      display: none;
-    }
+    &:before, &:after { display: none; }
   }
   // Forms in navbar
   .nav-collapse .navbar-form,
@@ -160,30 +117,20 @@
     height: 0;
   }
   // Navbar button
-  .navbar .btn-navbar {
-    display: block;
-  }
-
+  .navbar .btn-navbar { display: block; }
   // STATIC NAVBAR
-  // -------------
   .navbar-static .navbar-inner {
     padding-left:  10px;
     padding-right: 10px;
   }
-
-
 }
 
-
 // DEFAULT DESKTOP
-// ---------------
 
 @media (min-width: $navbarCollapseDesktopWidth) {
-
   // Required to make the collapsing navbar work on regular desktops
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
-
 }

@@ -1,7 +1,5 @@
 //
 // Thumbnails
-// --------------------------------------------------
-
 
 // Note: `.thumbnails` and `.thumbnails > li` are overriden in responsive files
 
@@ -12,9 +10,7 @@
   @include ctb-clearfix();
 }
 // Fluid rows have no left margin
-.row-fluid .thumbnails {
-  margin-left: 0;
-}
+.row-fluid .thumbnails { margin-left: 0; }
 
 // Float li to make thumbnails appear in a row
 .thumbnails > li {
