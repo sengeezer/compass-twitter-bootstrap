@@ -91,20 +91,6 @@ Include them individually or
 
 to include all files
 
-## SCSS to SASS Conversion tip
-
-To easily convert `.scss` files to `.sass` files you can use this little bash script:
-
-`$ for f in *.scss; do sass-convert -F scss -T sass $f ${f%%.*}.sass; done`
-
-To convert all twitter bootstrap .scss files to .sass (with overwrite):
-
-`$ for f in stylesheets/compass_twitter_bootstrap/*.scss; do sass-convert -F scss -T sass $f stylesheets_sass/compass_twitter_bootstrap/${f%%.*}.sass; done`
-
-`$ for f in stylesheets/*.scss; do sass-convert -F scss -T sass $f stylesheets_sass/${f%%.*}.sass; done`
-
-Nice and easy :)
-
 ## Upgrading
 
 If you want to contribute and help out keeping this gem in sync with the latest release of Twitter Bootstrap, you should keep in mind that all mixins are prefixed with `ctb-`.
